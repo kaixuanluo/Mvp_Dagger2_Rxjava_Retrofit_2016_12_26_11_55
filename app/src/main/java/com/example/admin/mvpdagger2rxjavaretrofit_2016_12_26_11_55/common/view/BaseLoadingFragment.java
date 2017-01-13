@@ -109,6 +109,7 @@ public abstract class BaseLoadingFragment<PRST extends BaseLoadingPresenter, DAT
     @Override
     public void complete() {
         mLoadingLayout.complete();
+        setRefreshComplete(getSrl());
     }
 
     @Override

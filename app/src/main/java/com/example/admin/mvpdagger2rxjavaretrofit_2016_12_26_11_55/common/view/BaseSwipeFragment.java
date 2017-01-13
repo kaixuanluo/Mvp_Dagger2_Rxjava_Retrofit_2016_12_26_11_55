@@ -48,6 +48,12 @@ public class BaseSwipeFragment extends RxFragment {
         }
     }
 
+    protected void setRefreshComplete(SwipeRefreshLayout srl) {
+        if (srl != null) {
+            srl.setRefreshing(false);
+        }
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
